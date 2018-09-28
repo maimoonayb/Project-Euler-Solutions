@@ -1,13 +1,5 @@
-# Project-Euler-Solutions
-|Python 3|
-
-Here are the solutions to problems taken from projecteuler.net
-
-
-
 # 603. Substring sums of prime concatenations
 > https://projecteuler.net/problem=603
-
 This problem combines three functions. First we will find a basic solution which explains each function and the way it works.
 Then we will find a solution which can handle larger numbers. 
 
@@ -36,77 +28,57 @@ We need to find a way to extract all the adjacent integer substrings of the give
 
 For smaller values we may use a list separating the digits inside the value n. Then use a pointer and an incrementing variable (which denotes the size of the substring) to generate all the possible substrings.
 
-Take the example *2 0 2 4*:
+Take the example *2024*:
+
+We will use the variable names 'p' and 'inc' to loop through each substring.
 
 inc = 1
-
-pointer = 0
 
 | 2 | 0 | 2 | 4 |
 |---|---|---|---|
 | ^ | 	|   |   |
 
-pointer = 1
-
 | 2 | 0 | 2 | 4 |
 |---|---|---|---|
 |   | ^ |   |   |
 
-pointer = 2
-
 | 2 | 0 | 2 | 4 |
 |---|---|---|---|
 |   | 	| ^ |   |
-
-pointer = 3
 
 | 2 | 0 | 2 | 4 |
 |---|---|---|---|
 |   | 	|   | ^ |
 
 inc = 2
-
-pointer = 0
-
 | 2 | 0 | 2 | 4 |
 |---|---|---|---|
 | ^ | ^ |   |   |
 
-pointer = 1
-
 | 2 | 0 | 2 | 4 |
 |---|---|---|---|
 |   | ^ | ^ |   |
-
-pointer = 2
 
 | 2 | 0 | 2 | 4 |
 |---|---|---|---|
 |   | 	| ^ | ^ |
 
 inc = 3
-
-pointer = 0
-
 | 2 | 0 | 2 | 4 |
 |---|---|---|---|
 | ^ | ^ | ^ |   |
-
-pointer = 1
 
 | 2 | 0 | 2 | 4 |
 |---|---|---|---|
 |   | ^ | ^ | ^ |
 
 inc = 4
-
-pointer = 0
-
 | 2 | 0 | 2 | 4 |
 |---|---|---|---|
 | ^ | ^ | ^ | ^ |
 
-Basic solution implementing for and white loops:
+
+My solution for this:
 
 ```python
 def S(n):
