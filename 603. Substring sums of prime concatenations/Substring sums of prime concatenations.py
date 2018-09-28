@@ -58,4 +58,5 @@ print (C(7,3))
 
 
 #print (S(C(10**6,10**12)) % (10**9+7))
-# Try to avoid the long stuff by using numpy instead of for loops!!
+#If we try to run this last line, it will cut out with a run-time error, or take several hours to compute.
+#We have to find a better way to tackle this.
