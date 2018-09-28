@@ -7,6 +7,7 @@ Here are the solutions to problems taken from projecteuler.net
 
 # 603. Substring sums of prime concatenations
 > https://projecteuler.net/problem=603
+
 This problem combines three functions. First we will find a basic solution which explains each function and the way it works.
 Then we will find a solution which can handle larger numbers. 
 
@@ -35,9 +36,7 @@ We need to find a way to extract all the adjacent integer substrings of the give
 
 For smaller values we may use a list separating the digits inside the value n. Then use a pointer and an incrementing variable (which denotes the size of the substring) to generate all the possible substrings.
 
-Take the example *2024*:
-
-
+Take the example *2 0 2 4*:
 
 inc = 1
 
@@ -107,7 +106,7 @@ pointer = 0
 |---|---|---|---|
 | ^ | ^ | ^ | ^ |
 
-My solution for this:
+Basic solution implementing for and white loops:
 
 ```python
 def S(n):
