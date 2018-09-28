@@ -74,6 +74,12 @@ def S(n):
             intsubstr.append(int(number))
             pointer += 1  #increment the pointer
     
-    return sum(intsubstr)
+    return sum(intsubstr) #This adds all elements in the list
     
+print (S(2024))
+```
+
+```
+OUTPUT:
+2034
 ```
