@@ -1,14 +1,7 @@
-# Project-Euler-Solutions
-|Python 3|
-
-Here are the solutions to problems taken from projecteuler.net
-
-
-
 # 603. Substring sums of prime concatenations
 > https://projecteuler.net/problem=603
 
-This problem combines three functions. First we will find a basic solution which explains each function and the way it works.
+This problem was taken from Project Euler, Problem 603. The solution requires us to combine three functions. First we will find a basic solution which explains each function and the way it works.
 Then we will find a solution which can handle larger numbers. 
 
 
