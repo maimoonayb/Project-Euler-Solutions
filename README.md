@@ -72,7 +72,75 @@ def S(n):
 print (S(2024))
 ```
 
+Output:
 ```
-OUTPUT:
 2034
 ```
+This result is as expected. We next we will try to develop ways in which to optimize this code in order be able to better handle large inputs of n.
+
+
+### The P(n) Function:
+We want to generate a function which lists the first n prime numbers. First we must look into identifying a prime number. Prime numbers only have two factors:
+- One
+- Itself
+
+Using this criteria, we will write a function to identify a prime:
+
+```python
+def isPrime(number):
+    prime = True
+    for i in range (1,number):  
+        if i<>1 and number % i == 0:
+            prime = False
+    return prime
+```
+
+Then using the function above, we can generate another function to calculate n primes:
+
+```python
+def P(n):
+    index = 2
+    primes = []
+
+    while len(primes)<n:
+        if isPrime(index) == True:
+            primes.append(index)
+        index += 1
+
+    output = [str(i) for i in primes]
+    return int(''.join(output))
+
+print (P(7))
+```
+
+Output:
+```
+2357111317
+```
+
+### The C(n,k) Function:
+This is a simple function which concatenates the solution to P(n), k times.
+
+```python
+def C(n,k):
+    nPrimes = str(P(n))
+    newval = ''
+    for i in range(k):
+        newval = newval + nPrimes
+    return int(newval)
+
+print (C(7,3))
+```
+Output:
+```
+235711131723571113172357111317
+```
+
+### Evaluating S(C([10]^6,[10]^12 ))  MOD ([10]^9+7)
+To break down this statement:
+1. We first use the P(n) function to find the first 1,000,000 primes, and display them as a single value.
+2. This value is then repeated 10^12 times to produce an extremely long value.
+3. We then use the S(n) function on this result to add up all the integer substrings of the value.
+4. We give the modulus of the result against (10^9)+7 because often the number is too large to be stored on the system running it.
+
+We will use the 
