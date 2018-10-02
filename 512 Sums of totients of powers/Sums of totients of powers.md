@@ -13,4 +13,4 @@ g(100)=2007.
 
 Find g(5×108).
 
-### The Totient Function
+### The Totient Function φ(n)
