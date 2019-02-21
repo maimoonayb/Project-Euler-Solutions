@@ -1,6 +1,6 @@
 # 120. Square Remainders - Problem Explained
 
-//https://projecteuler.net/problem=120
+> https://projecteuler.net/problem=120
 
 Let r be the remainder when (a−1)n + (a+1)n is divided by a2.
 
