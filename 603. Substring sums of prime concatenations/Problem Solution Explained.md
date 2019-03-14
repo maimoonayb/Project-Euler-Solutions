@@ -136,7 +136,7 @@ Output:
 235711131723571113172357111317
 ```
 
-### Evaluating S(C(10^6,10^12 ))  MOD (10^9+7)
+### Evaluating $S(C(10^6,10^12 ))  MOD (10^9+7)$
 To break down this statement:
 1. We first use the P(n) function to find the first 1,000,000 primes, and display them as a single value.
 2. This value is then repeated 10^12 times to produce an extremely long value.
