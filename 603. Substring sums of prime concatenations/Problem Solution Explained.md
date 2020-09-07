@@ -14,14 +14,14 @@ For example:
 Let P(n) be the integer formed by concatenating the first n primes together.	 
 For example: 
 
-   $P(7) = 2357111317$
+   <img src="https://render.githubusercontent.com/render/math?math=P(7) = 2357111317">
 
 Let C(n,k) be the integer formed by concatenating k copies of P(n) together. 	
 For example:
 
-   $C(7,3) = 235711131723571113172357111317$
+   <img src="https://render.githubusercontent.com/render/math?math=C(7,3) = 235711131723571113172357111317">
 
-Evaluate $S(C([10]^6,[10]^12 ))  MOD ([10]^9+7)$
+Evaluate <img src="https://render.githubusercontent.com/render/math?math=S(C([10]^6,[10]^12 ))  MOD ([10]^9+7)">
 
 
 ### The S(n) Function:
@@ -136,7 +136,7 @@ Output:
 235711131723571113172357111317
 ```
 
-### Evaluating S(C(10^6,10^12 ))  MOD (10^9+7)
+### Evaluating <img src="https://render.githubusercontent.com/render/math?math=S(C(10^6,10^12 ))  MOD (10^9+7)">
 To break down this statement:
 1. We first use the P(n) function to find the first 1,000,000 primes, and display them as a single value.
 2. This value is then repeated 10^12 times to produce an extremely long value.
