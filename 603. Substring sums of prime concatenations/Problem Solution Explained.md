@@ -9,21 +9,19 @@ Then we will find a solution which can handle larger numbers.
 Let S(n) denote the sum of all contiguous integer-substrings that can be formed from the integer n. The substrings need not be distinct. 
 For example: 
 
-$\text{S}_1(N) = \sum_{p=1}^N \text{E}(p)$
-
-   <img src="https://render.githubusercontent.com/render/math?math=S(2024) = 2 + 0 + 2 + 4 + 20 + 02 + 24 + 202 + 024 + 2024 = 2304">
+   *S(2024) = 2 + 0 + 2 + 4 + 20 + 02 + 24 + 202 + 024 + 2024 = 2304*
 
 Let P(n) be the integer formed by concatenating the first n primes together.	 
 For example: 
 
-   <img src="https://render.githubusercontent.com/render/math?math=P(7) = 2357111317">
+   *P(7) = 2357111317"*
 
 Let C(n,k) be the integer formed by concatenating k copies of P(n) together. 	
 For example:
 
-   <img src="https://render.githubusercontent.com/render/math?math=C(7,3) = 235711131723571113172357111317">
+   *C(7,3) = 235711131723571113172357111317*
 
-Evaluate <img src="https://render.githubusercontent.com/render/math?math=S(C([10]^6,[10]^12 ))  MOD ([10]^9+7)">
+Evaluate *S(C([10]^6,[10]^12 ))  MOD ([10]^9+7)*
 
 
 ### The S(n) Function:
@@ -138,7 +136,7 @@ Output:
 235711131723571113172357111317
 ```
 
-### Evaluating <img src="https://render.githubusercontent.com/render/math?math=S(C(10^6,10^12 ))  MOD (10^9+7)">
+### Evaluating *S(C(10^6,10^12 ))  MOD (10^9+7)*
 To break down this statement:
 1. We first use the P(n) function to find the first 1,000,000 primes, and display them as a single value.
 2. This value is then repeated 10^12 times to produce an extremely long value.
