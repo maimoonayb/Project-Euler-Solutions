@@ -9,6 +9,8 @@ Then we will find a solution which can handle larger numbers.
 Let S(n) denote the sum of all contiguous integer-substrings that can be formed from the integer n. The substrings need not be distinct. 
 For example: 
 
+$\text{S}_1(N) = \sum_{p=1}^N \text{E}(p)$
+
    <img src="https://render.githubusercontent.com/render/math?math=S(2024) = 2 + 0 + 2 + 4 + 20 + 02 + 24 + 202 + 024 + 2024 = 2304">
 
 Let P(n) be the integer formed by concatenating the first n primes together.	 
